@@ -97,7 +97,8 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Header.vue */ "./resources/js/components/Header.vue");
 /* harmony import */ var _pages_StepOne__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/StepOne */ "./resources/js/pages/StepOne.vue");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.vue");
+/* harmony import */ var _pages_StepTwo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/StepTwo */ "./resources/js/pages/StepTwo.vue");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.vue");
 //
 //
 //
@@ -106,6 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
 
 
 
@@ -114,7 +116,8 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Header: _components_Header_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     StepOne: _pages_StepOne__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"]
+    StepTwo: _pages_StepTwo__WEBPACK_IMPORTED_MODULE_2__["default"],
+    Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 });
 
@@ -282,6 +285,76 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/StepTwo.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/StepTwo.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1112,20 +1185,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("main", { staticClass: "main " }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "content" }, [
-          _c("div", { staticClass: "banner" }, [
-            _c("div", { staticClass: "banner__body" }, [
-              _c("div", { staticClass: "step-one" }, [
-                _c("div", { staticClass: "text-block" }, [
+  return _c("main", { staticClass: "main" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "banner" }, [
+          _c("div", { staticClass: "banner__body" }, [
+            _c("div", { staticClass: "step-one" }, [
+              _c(
+                "div",
+                { staticClass: "text-block" },
+                [
                   _c("h2", { staticClass: "title" }, [
                     _vm._v("Рассчитать КАСКО онлайн")
                   ]),
@@ -1134,57 +1203,212 @@ var staticRenderFns = [
                     _vm._v("По номеру авто за 3 минуты")
                   ]),
                   _vm._v(" "),
-                  _c("ul", { staticClass: "list" }, [
-                    _c("li", { staticClass: "list__item" }, [
-                      _vm._v("Цены выгоднее на 10-15%")
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "list__item" }, [
-                      _vm._v("Выберите лучший вариант из 7 страховых")
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "list__item" }, [
-                      _vm._v("Бесплатная доставка полиса")
-                    ])
-                  ]),
+                  _vm._m(0),
                   _vm._v(" "),
-                  _c("label", { staticClass: "input__box" }, [
-                    _c("p", { staticClass: "input__text" }, [
-                      _vm._v("Если есть")
-                    ]),
-                    _vm._v(" "),
-                    _c("input", {
-                      staticClass: "input",
-                      attrs: {
-                        type: "text",
-                        placeholder: "Ввести номер машины"
-                      }
-                    })
-                  ]),
+                  _vm._m(1),
                   _vm._v(" "),
-                  _c("button", { staticClass: "btn" }, [
-                    _c("p", { staticClass: "btn__text" }, [
-                      _vm._v("Рассчитать стоимость")
-                    ]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "btn__step" }, [_vm._v("Шаг 1/4")])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "bg" }, [
-                  _c("img", {
-                    attrs: { src: "images/step-one__car.png", alt: "" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "bg-mobile" }, [
-                  _c("img", {
-                    attrs: { src: "images/step-one-mobile__car.png", alt: "" }
-                  })
-                ])
-              ])
+                  _c(
+                    "router-link",
+                    { staticClass: "btn", attrs: { to: "/StepTwo" } },
+                    [
+                      _c("p", { staticClass: "btn__text" }, [
+                        _vm._v("Рассчитать стоимость")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "btn__step" }, [_vm._v("Шаг 1/4")])
+                    ]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3)
             ])
           ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "list" }, [
+      _c("li", { staticClass: "list__item" }, [
+        _vm._v("Цены выгоднее на 10-15%")
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "list__item" }, [
+        _vm._v(
+          "\n                  Выберите лучший вариант из 7 страховых\n                "
+        )
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "list__item" }, [
+        _vm._v("Бесплатная доставка полиса")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("label", { staticClass: "input__box" }, [
+      _c("p", { staticClass: "input__text" }, [_vm._v("Если есть")]),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "input",
+        attrs: { type: "text", placeholder: "Ввести номер машины" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg" }, [
+      _c("img", { attrs: { src: "images/step-one__car.png", alt: "" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "bg-mobile" }, [
+      _c("img", { attrs: { src: "images/step-one-mobile__car.png", alt: "" } })
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/StepTwo.vue?vue&type=template&id=a1c52f32&":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/StepTwo.vue?vue&type=template&id=a1c52f32& ***!
+  \*****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("main", { staticClass: "main" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "content" }, [
+        _c("div", { staticClass: "banner" }, [
+          _c("div", { staticClass: "banner__body" }, [
+            _c("div", { staticClass: "step-two" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "status-bar" },
+                [
+                  _vm._m(2),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    { staticClass: "btn", attrs: { to: "/StepThree" } },
+                    [
+                      _c("p", { staticClass: "btn__text" }, [
+                        _vm._v("Подтвердить данные")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "btn__step" }, [_vm._v("Шаг 1/4")])
+                    ]
+                  )
+                ],
+                1
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-block" }, [
+      _c("h2", { staticClass: "title" }, [_vm._v("Параметры автомобиля")]),
+      _vm._v(" "),
+      _c("p", { staticClass: "paragraph" }, [
+        _vm._v(
+          "\n                Проверьте, верно ли введены данные о вашем авто\n              "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "policy" }, [
+        _c("p", { staticClass: "policy-title" }, [
+          _vm._v("\n                  Предыдущий полис "),
+          _c("span", { staticClass: "gray" }, [_vm._v("(Если есть)")])
+        ]),
+        _vm._v(" "),
+        _c("button", { staticClass: "attach" }, [
+          _c("span", { staticClass: "icon-clip" }, [
+            _c("img", { attrs: { src: "images/icon-clip.svg", alt: "" } })
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "attach__text" }, [
+            _vm._v("Прикрепить файл")
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-block" }, [
+      _c("label", { staticClass: "input__box" }, [_vm._v("Марка, модель")]),
+      _vm._v(" "),
+      _c("label", { staticClass: "input__box" }, [_vm._v("Год выпуска")]),
+      _vm._v(" "),
+      _c("label", { staticClass: "input__box" }, [
+        _vm._v("Мощность двигателя")
+      ]),
+      _vm._v(" "),
+      _c("label", { staticClass: "input__box" }, [_vm._v("Стоимость авто")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "progress-bar" }, [
+      _c("p", { staticClass: "progress-bar__title" }, [
+        _vm._v("Оформление каско")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "progress-bar__line" }, [
+        _c("span", { staticClass: "progress-bar__line-next-step" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "progress-bar__line-this-step" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "progress-bar__text" }, [
+        _c("span", { staticClass: "progress-bar__step" }, [_vm._v("Шаг 2/4")]),
+        _vm._v(" "),
+        _c("span", { staticClass: "progress-bar__descr" }, [
+          _vm._v("Проверьте данные об авто")
         ])
       ])
     ])
@@ -16852,6 +17076,78 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/pages/StepTwo.vue":
+/*!****************************************!*\
+  !*** ./resources/js/pages/StepTwo.vue ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _StepTwo_vue_vue_type_template_id_a1c52f32___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StepTwo.vue?vue&type=template&id=a1c52f32& */ "./resources/js/pages/StepTwo.vue?vue&type=template&id=a1c52f32&");
+/* harmony import */ var _StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StepTwo.vue?vue&type=script&lang=js& */ "./resources/js/pages/StepTwo.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _StepTwo_vue_vue_type_template_id_a1c52f32___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StepTwo_vue_vue_type_template_id_a1c52f32___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/StepTwo.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/StepTwo.vue?vue&type=script&lang=js&":
+/*!*****************************************************************!*\
+  !*** ./resources/js/pages/StepTwo.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./StepTwo.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/StepTwo.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/StepTwo.vue?vue&type=template&id=a1c52f32&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/pages/StepTwo.vue?vue&type=template&id=a1c52f32& ***!
+  \***********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_template_id_a1c52f32___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./StepTwo.vue?vue&type=template&id=a1c52f32& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/StepTwo.vue?vue&type=template&id=a1c52f32&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_template_id_a1c52f32___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StepTwo_vue_vue_type_template_id_a1c52f32___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/router.js":
 /*!********************************!*\
   !*** ./resources/js/router.js ***!
@@ -16865,13 +17161,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _pages_StepOne__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/StepOne */ "./resources/js/pages/StepOne.vue");
+/* harmony import */ var _pages_StepTwo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/StepTwo */ "./resources/js/pages/StepTwo.vue");
 
 
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
+
 var routes = [{
-  path: '/test',
+  path: '/',
   component: _pages_StepOne__WEBPACK_IMPORTED_MODULE_2__["default"]
+}, {
+  path: '/StepTwo',
+  component: _pages_StepTwo__WEBPACK_IMPORTED_MODULE_3__["default"]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
   mode: "history",
@@ -16898,8 +17199,8 @@ var routes = [{
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\openserver\domains\Kasko\example-app\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\openserver\domains\Kasko\example-app\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\openserver\domains\Kasko\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\openserver\domains\Kasko\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

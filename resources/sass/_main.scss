@@ -51,6 +51,7 @@ textarea,
 select {
    font: inherit;
    outline: none;
+   color: #2e2b2b;
 }
 
 a {
@@ -336,7 +337,7 @@ textarea {
    min-height: 600px;
    overflow: hidden;
    &__body {
-      padding: 60px 90px 80px;
+      padding: 60px 90px 60px;
    }
 }
 .list {
@@ -368,6 +369,7 @@ textarea {
 .title {
    font-size: 55px;
    line-height: 118%;
+   font-weight: 400;
 }
 .subtitle {
    font-size: 35px;
@@ -384,7 +386,11 @@ textarea {
       position: relative;
       display: flex;
       background: #ffffff;
+      border: 1px solid #fff;
       border-radius: 4px;
+      &:hover {
+         border: 1px solid rgba(0, 0, 0, 0.2);
+      }
    }
 
    &__text {
@@ -418,6 +424,7 @@ textarea {
       font-weight: bold;
       font-size: 16px;
       color: #ffffff;
+      margin-right: 10px;
    }
    &__step {
       font-size: 14px;
@@ -425,6 +432,7 @@ textarea {
    }
 }
 .step-one {
+   padding-bottom: 20px;
    .title {
       margin-bottom: 10px;
    }
@@ -459,4 +467,146 @@ textarea {
       display: none;
    }
 }
+
+.step-two {
+   padding-right: 46px;
+   .text-block {
+      min-height: 130px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: flex-end;
+   }
+   .title {
+      max-width: 320px;
+      margin-right: 50px;
+   }
+   .paragraph {
+      max-width: 220px;
+      margin-right: 50px;
+   }
+   .policy {
+      margin-left: auto;
+   }
+   .progress-bar__line-next-step {
+      width: 50%;
+   }
+   .progress-bar__line-this-step {
+      width: 25%;
+   }
+}
+.paragraph {
+   font-size: 16px;
+   line-height: 156%;
+}
+.policy {
+   font-size: 16px;
+}
+.policy-title {
+   margin-bottom: 15px;
+   .gray {
+      color: rgba(46, 43, 43, 0.5);
+   }
+}
+.attach {
+   border: 1px solid rgba(0, 0, 0, 0.15);
+   width: 290px;
+   height: 55px;
+   padding: 15px 19px;
+   display: flex;
+   align-items: center;
+   border-radius: 4px;
+   .icon-clip {
+      margin-right: 10px;
+      width: 23px;
+      height: 23px;
+      & img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+   }
+   &__text {
+      transform: translateY(-2px);
+   }
+}
+.form-block {
+   display: flex;
+   flex-wrap: wrap;
+   margin: -7.5px;
+   margin-bottom: 15px;
+   min-height: 165px;
+   .input__box {
+      margin: 7.5px;
+      cursor: pointer;
+   }
+}
+
+.status-bar {
+   padding-top: 55px;
+   border-top: 5px solid #fff;
+   margin-left: -90px;
+   padding-left: 90px;
+   padding-right: 136px;
+   margin-right: -136px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.progress-bar {
+   flex: 1 1 auto;
+   margin-right: 50px;
+   &__title {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: rgba(46, 43, 43, 0.7);
+      margin-bottom: 12px;
+      font-weight: 700;
+   }
+
+   &__line {
+      max-width: 570px;
+      width: 100%;
+      height: 6px;
+      background: rgba(0, 0, 0, 0.1);
+      position: relative;
+      margin-bottom: 10px;
+   }
+
+   &__line-next-step {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.1);
+   }
+
+   &__line-this-step {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #6d86fd;
+   }
+
+   &__text {
+      font-size: 16px;
+   }
+
+   &__step {
+      margin-right: 15px;
+      color: rgba(46, 43, 43, 0.5);
+   }
+
+   &__descr {
+   }
+}
+.btn {
+   &__text {
+   }
+
+   &__step {
+   }
+}
+
 // banner end

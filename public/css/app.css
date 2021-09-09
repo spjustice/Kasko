@@ -47,6 +47,7 @@ textarea,
 select {
   font: inherit;
   outline: none;
+  color: #2e2b2b;
 }
 
 a {
@@ -348,7 +349,7 @@ textarea {
 }
 
 .banner__body {
-  padding: 60px 90px 80px;
+  padding: 60px 90px 60px;
 }
 
 .list__item {
@@ -381,6 +382,7 @@ textarea {
 .title {
   font-size: 55px;
   line-height: 118%;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -401,7 +403,12 @@ textarea {
   position: relative;
   display: flex;
   background: #ffffff;
+  border: 1px solid #fff;
   border-radius: 4px;
+}
+
+.input__box:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .input__text {
@@ -440,11 +447,16 @@ textarea {
   font-weight: bold;
   font-size: 16px;
   color: #ffffff;
+  margin-right: 10px;
 }
 
 .btn__step {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.step-one {
+  padding-bottom: 20px;
 }
 
 .step-one .title {
@@ -489,7 +501,166 @@ textarea {
   display: none;
 }
 
+.step-two {
+  padding-right: 46px;
+}
+
+.step-two .text-block {
+  min-height: 130px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.step-two .title {
+  max-width: 320px;
+  margin-right: 50px;
+}
+
+.step-two .paragraph {
+  max-width: 220px;
+  margin-right: 50px;
+}
+
+.step-two .policy {
+  margin-left: auto;
+}
+
+.step-two .progress-bar__line-next-step {
+  width: 50%;
+}
+
+.step-two .progress-bar__line-this-step {
+  width: 25%;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 156%;
+}
+
+.policy {
+  font-size: 16px;
+}
+
+.policy-title {
+  margin-bottom: 15px;
+}
+
+.policy-title .gray {
+  color: rgba(46, 43, 43, 0.5);
+}
+
+.attach {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 290px;
+  height: 55px;
+  padding: 15px 19px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.attach .icon-clip {
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+}
+
+.attach .icon-clip img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.attach__text {
+  transform: translateY(-2px);
+}
+
+.form-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -7.5px;
+  margin-bottom: 15px;
+  min-height: 165px;
+}
+
+.form-block .input__box {
+  margin: 7.5px;
+  cursor: pointer;
+}
+
+.status-bar {
+  padding-top: 55px;
+  border-top: 5px solid #fff;
+  margin-left: -90px;
+  padding-left: 90px;
+  padding-right: 136px;
+  margin-right: -136px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  flex: 1 1 auto;
+  margin-right: 50px;
+}
+
+.progress-bar__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(46, 43, 43, 0.7);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.progress-bar__line {
+  max-width: 570px;
+  width: 100%;
+  height: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.progress-bar__line-next-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar__line-this-step {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #6d86fd;
+}
+
+.progress-bar__text {
+  font-size: 16px;
+}
+
+.progress-bar__step {
+  margin-right: 15px;
+  color: rgba(46, 43, 43, 0.5);
+}
+
 @media (max-width: 1199.98px) {
+  .step-two .policy {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .text-block {
+    flex-wrap: wrap;
+  }
+
   .logo {
     margin-right: 40px;
   }
@@ -586,7 +757,85 @@ textarea {
   }
 }
 
+@media (max-width: 767.98px) {
+  .step-two {
+    padding-right: unset;
+  }
+
+  .paragraph {
+    margin-top: 10px;
+  }
+
+  .status-bar {
+    flex-wrap: wrap;
+  }
+
+  .progress-bar {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 575.98px) {
+  .step-two {
+    padding-top: 60px;
+  }
+
+  .step-two .text-block {
+    margin-bottom: 35px;
+  }
+
+  .form-block {
+    margin-bottom: -7.5px;
+  }
+
+  .status-bar {
+    border: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .policy {
+    font-size: 14px;
+  }
+
+  .attach {
+    height: 60px;
+    padding-left: 38px;
+  }
+
+  .attach .icon-clip {
+    width: 29px;
+    height: 29px;
+    margin-right: 18px;
+  }
+
+  .attach__text {
+    font-size: 20px;
+  }
+
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 20;
+    padding: 12px 15px 17px;
+  }
+
+  .progress-bar__title {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+
+  .progress-bar__text {
+    font-size: 14px;
+  }
+
+  .progress-bar__line {
+    margin-bottom: 5px;
+  }
+
   .content {
     padding: 0;
   }

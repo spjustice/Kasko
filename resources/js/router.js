@@ -4,11 +4,16 @@ import Vue from "vue";
 Vue.use(vueRouter);
 
 import StepOne from './pages/StepOne'
+import StepTwo from './pages/StepTwo'
 
 const routes = [
    {
-      path: '/test',
+      path: '/',
       component: StepOne
+   },
+   {
+      path: '/StepTwo',
+      component: StepTwo
    }
 ];
 

@@ -1,0 +1,210 @@
+// MAX-WIDTH 1600PX breakpoints START
+@media (max-width: 1600px) {
+}
+// MAX-WIDTH 1600PX breakpoints END
+
+// MAX-WIDTH 1399.98PX breakpoints START
+@media (max-width: 1399.98px) {
+}
+// MAX-WIDTH 1399.98PX breakpoints END
+
+// MAX-WIDTH 1199.98PX breakpoints START
+@media (max-width: 1199.98px) {
+   .logo {
+      margin-right: 40px;
+   }
+   .menu__item {
+      margin-right: 40px;
+   }
+}
+// MAX-WIDTH 1199.98PX breakpoints END
+
+// MAX-WIDTH 991.98PX breakpoints START
+@media (max-width: 991.98px) {
+   .step-one {
+      .bg {
+         // position: static;
+         right: -70px;
+      }
+   }
+   .banner__body {
+      padding: 30px 20px 40px;
+   }
+   .header {
+      &__content {
+         position: relative;
+         z-index: 99999;
+         height: 72px;
+      }
+      &__contacts {
+         margin-right: 26px;
+      }
+      &__phone-num {
+         font-size: 16px;
+         color: rgba(46, 43, 43, 0.7);
+      }
+   }
+   .burger-btn {
+      display: flex;
+      &.active {
+         .menu.burger {
+            right: 0;
+         }
+         .icon-burger {
+            display: none;
+         }
+         .icon-close {
+            display: block;
+         }
+      }
+   }
+   .menu {
+      display: none;
+   }
+   .menu.burger {
+      display: block;
+      background: #fff;
+      position: fixed;
+      z-index: 999;
+      transition: 0.5s;
+      top: 72px;
+      // left: 0;
+      right: -100%;
+      width: 100%;
+      height: calc(100% - 72px);
+      padding: 30px 15px 70px;
+      .menu {
+         &__list {
+            overflow-y: auto;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            // height: unset;
+         }
+         &__item {
+            margin-right: unset;
+            height: unset;
+            &:not(:last-child) {
+               margin-bottom: 15px;
+            }
+         }
+         &__link {
+            padding: 10px;
+         }
+         &__rights {
+            display: block;
+         }
+      }
+   }
+
+   .logo {
+      width: 51px;
+      margin-right: unset;
+   }
+}
+// MAX-WIDTH 991.98PX breakpoints END
+
+// MAX-WIDTH 767.98PX breakpoints START
+@media (max-width: 767.98px) {
+}
+// MAX-WIDTH 767.98PX breakpoints END
+
+// MAX-WIDTH 576.98PX breakpoints START
+@media (max-width: 575.98px) {
+   .content {
+      padding: 0;
+   }
+   .banner {
+      border-radius: unset;
+      margin: 0 -15px;
+      &__body {
+         padding: 30px 15px 0;
+      }
+   }
+   .title {
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+   }
+   .subtitle {
+      font-size: 20px;
+   }
+   .list {
+      &__item {
+         &:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+   }
+   .step-one {
+      padding-bottom: 320px;
+      .title {
+         margin-bottom: 17px;
+      }
+      .subtitle {
+         margin-bottom: 31px;
+      }
+      .list {
+         margin-bottom: 54px;
+      }
+      .bg {
+         display: none;
+      }
+      .bg-mobile {
+         display: block;
+         position: absolute;
+         right: 0;
+         bottom: 0;
+         height: 279px;
+         width: 648px;
+         // pointer-events: visible;
+         margin: 0 -15px;
+         & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+   .footer {
+      display: flex;
+      flex-direction: column;
+      &__links {
+         order: 2;
+         border: unset;
+         padding: 20px 0 40px;
+         .container {
+            flex-direction: column;
+            text-align: center;
+         }
+      }
+      &__link {
+         text-decoration-line: underline;
+         text-decoration-color: rgba(0, 0, 0, 0.1);
+         text-transform: lowercase;
+         font-size: 15px;
+         line-height: 22px;
+         &:hover {
+            text-decoration-line: none;
+         }
+         &::first-letter {
+            text-transform: uppercase;
+         }
+         &:not(:last-child) {
+            margin: 0 0 10px 0;
+         }
+      }
+      &__info {
+         border: unset;
+         padding: 34px 0 20px;
+         text-align: center;
+         font-size: 15px;
+      }
+      &__rights {
+         margin-bottom: 10px;
+         color: #2e2b2b;
+         font-size: 16px;
+      }
+   }
+}
+// MAX-WIDTH 576.98PX breakpoints END

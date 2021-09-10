@@ -121,6 +121,14 @@
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
+   .banner {
+      min-height: 500px;
+   }
+   .step-four {
+      .bg {
+         display: none;
+      }
+   }
    .step-two {
       padding-right: unset;
    }
@@ -139,6 +147,16 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .step-four {
+      padding-top: 60px;
+      .title {
+         margin-right: unset;
+      }
+      .text-block {
+         min-height: unset;
+         margin-bottom: 30px;
+      }
+   }
    .step-three {
       padding-top: 60px;
       .text-block {
@@ -151,8 +169,15 @@
          margin-bottom: 35px;
       }
    }
+   .paragraph {
+      color: rgba(46, 43, 43, 0.7);
+      &.mobile {
+         display: block;
+      }
+   }
    .form-block {
       margin-bottom: -7.5px;
+      min-height: unset;
    }
    .status-bar {
       border: unset;

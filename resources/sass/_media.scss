@@ -10,6 +10,9 @@
 
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
+   .toggle {
+      margin-top: 27px;
+   }
    .step-two {
       .policy {
          width: 100%;
@@ -30,6 +33,9 @@
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+   .toggle__info:hover {
+      transition: 0s 0s;
+   }
    .step-one {
       .bg {
          // position: static;
@@ -133,6 +139,12 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .step-three {
+      padding-top: 60px;
+      .text-block {
+         margin-bottom: 25px;
+      }
+   }
    .step-two {
       padding-top: 60px;
       .text-block {
@@ -194,6 +206,7 @@
       text-transform: uppercase;
       font-size: 30px;
       font-weight: bold;
+      width: 100%;
    }
    .subtitle {
       font-size: 20px;

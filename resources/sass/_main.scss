@@ -370,6 +370,7 @@ textarea {
    font-size: 55px;
    line-height: 118%;
    font-weight: 400;
+   cursor: default;
 }
 .subtitle {
    font-size: 35px;
@@ -391,6 +392,9 @@ textarea {
       &:hover {
          border: 1px solid rgba(0, 0, 0, 0.2);
       }
+      .icon-add {
+         margin-right: 14px;
+      }
    }
 
    &__text {
@@ -399,6 +403,10 @@ textarea {
       right: 11px;
       top: 5px;
       font-size: 14px;
+   }
+   &__title {
+      font-size: 16px;
+      transform: translateY(-2.5px);
    }
 }
 .btn {
@@ -495,8 +503,45 @@ textarea {
       width: 25%;
    }
 }
+.step-three {
+   .text-block {
+      min-height: 130px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: flex-end;
+   }
+   .title {
+      max-width: 320px;
+      margin-right: 50px;
+   }
+   .paragraph {
+      max-width: 120px;
+      margin-right: 100px;
+   }
+   .policy {
+      margin-left: auto;
+   }
+   .progress-bar__line-next-step {
+      width: 75%;
+   }
+   .progress-bar__line-this-step {
+      width: 50%;
+   }
+   .status-bar {
+      margin-right: -90px;
+   }
+   .input__box {
+      background: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      justify-content: center;
+      align-items: center;
+   }
+}
+
 .paragraph {
    font-size: 16px;
+   cursor: default;
    line-height: 156%;
 }
 .policy {
@@ -547,7 +592,7 @@ textarea {
    border-top: 5px solid #fff;
    margin-left: -90px;
    padding-left: 90px;
-   padding-right: 136px;
+   padding-right: 90px;
    margin-right: -136px;
    display: flex;
    justify-content: space-between;
@@ -555,6 +600,7 @@ textarea {
 }
 .progress-bar {
    flex: 1 1 auto;
+   cursor: default;
    margin-right: 50px;
    &__title {
       font-size: 16px;
@@ -601,11 +647,97 @@ textarea {
    &__descr {
    }
 }
-.btn {
-   &__text {
+
+.toggle {
+   display: flex;
+   align-items: center;
+   &__item {
+      position: relative;
+      margin-right: 18px;
+      width: 76px;
+      height: 43px;
+      background: #ffffff;
+      transition: background 0.1s 0.2s;
+      border-radius: 93px;
+      cursor: pointer;
+      &.active {
+         background: #6a89fc;
+         .toggle__circle {
+            transform: translate(-100%, -50%);
+            left: calc(100% - 7px);
+            // right: 7px;
+            background: #fff;
+         }
+      }
    }
 
-   &__step {
+   &__circle {
+      position: absolute;
+      transform: translate(0, -50%);
+      top: 50%;
+      left: 7px;
+      width: 32px;
+      height: 32px;
+      background: #6a89fc;
+      border-radius: 50%;
+      // transition: 0.3s;
+      transition-property: left, transform, background;
+      transition-duration: 0.3s, 0.3s, 0.1s;
+      transition-delay: 0s, 0s, 0.2s;
+   }
+
+   &__text {
+      font-size: 18px;
+      cursor: default;
+      margin-right: 12px;
+      transform: translateY(-3px);
+   }
+   &__info {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: default;
+      & span {
+         transform: translateY(-2px);
+         font-weight: bold;
+      }
+      &:hover {
+         .toggle__info-hide {
+            opacity: 1;
+            transition: 0s 0.3s;
+         }
+      }
+   }
+   &__info-hide {
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: calc(100% + 26px);
+      right: -17px;
+      width: 290px;
+      border-radius: 4px;
+      background: #fff;
+      padding: 25px 50px 25px 32px;
+      font-size: 16px;
+      color: rgba(46, 43, 43, 0.8);
+      filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.1));
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 99%;
+         right: 21px;
+         height: 24px;
+         width: 24px;
+         border: 12px solid #fff;
+         border-left: 12px solid transparent;
+         border-right: 12px solid transparent;
+         border-top: 12px solid transparent;
+      }
    }
 }
 

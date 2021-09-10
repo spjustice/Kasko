@@ -5,6 +5,7 @@ Vue.use(vueRouter);
 
 import StepOne from './pages/StepOne'
 import StepTwo from './pages/StepTwo'
+import StepThree from './pages/StepThree'
 
 const routes = [
    {
@@ -14,6 +15,10 @@ const routes = [
    {
       path: '/StepTwo',
       component: StepTwo
+   },
+   {
+      path: '/StepThree',
+      component: StepThree
    }
 ];
 

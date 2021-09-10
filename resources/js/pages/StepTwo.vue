@@ -45,7 +45,7 @@
                 </div>
                 <router-link to="/StepThree" class="btn">
                   <p class="btn__text">Подтвердить данные</p>
-                  <p class="btn__step">Шаг 1/4</p>
+                  <p class="btn__step">Шаг 2/4</p>
                 </router-link>
               </div>
             </div>

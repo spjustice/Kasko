@@ -383,6 +383,7 @@ textarea {
   font-size: 55px;
   line-height: 118%;
   font-weight: 400;
+  cursor: default;
 }
 
 .subtitle {
@@ -411,12 +412,21 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.input__box .icon-add {
+  margin-right: 14px;
+}
+
 .input__text {
   color: rgba(46, 43, 43, 0.5);
   position: absolute;
   right: 11px;
   top: 5px;
   font-size: 14px;
+}
+
+.input__title {
+  font-size: 16px;
+  transform: translateY(-2.5px);
 }
 
 .btn {
@@ -535,8 +545,50 @@ textarea {
   width: 25%;
 }
 
+.step-three .text-block {
+  min-height: 130px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.step-three .title {
+  max-width: 320px;
+  margin-right: 50px;
+}
+
+.step-three .paragraph {
+  max-width: 120px;
+  margin-right: 100px;
+}
+
+.step-three .policy {
+  margin-left: auto;
+}
+
+.step-three .progress-bar__line-next-step {
+  width: 75%;
+}
+
+.step-three .progress-bar__line-this-step {
+  width: 50%;
+}
+
+.step-three .status-bar {
+  margin-right: -90px;
+}
+
+.step-three .input__box {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  align-items: center;
+}
+
 .paragraph {
   font-size: 16px;
+  cursor: default;
   line-height: 156%;
 }
 
@@ -597,7 +649,7 @@ textarea {
   border-top: 5px solid #fff;
   margin-left: -90px;
   padding-left: 90px;
-  padding-right: 136px;
+  padding-right: 90px;
   margin-right: -136px;
   display: flex;
   justify-content: space-between;
@@ -606,6 +658,7 @@ textarea {
 
 .progress-bar {
   flex: 1 1 auto;
+  cursor: default;
   margin-right: 50px;
 }
 
@@ -651,7 +704,108 @@ textarea {
   color: rgba(46, 43, 43, 0.5);
 }
 
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle__item {
+  position: relative;
+  margin-right: 18px;
+  width: 76px;
+  height: 43px;
+  background: #ffffff;
+  transition: background 0.1s 0.2s;
+  border-radius: 93px;
+  cursor: pointer;
+}
+
+.toggle__item.active {
+  background: #6a89fc;
+}
+
+.toggle__item.active .toggle__circle {
+  transform: translate(-100%, -50%);
+  left: calc(100% - 7px);
+  background: #fff;
+}
+
+.toggle__circle {
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 7px;
+  width: 32px;
+  height: 32px;
+  background: #6a89fc;
+  border-radius: 50%;
+  transition-property: left, transform, background;
+  transition-duration: 0.3s, 0.3s, 0.1s;
+  transition-delay: 0s, 0s, 0.2s;
+}
+
+.toggle__text {
+  font-size: 18px;
+  cursor: default;
+  margin-right: 12px;
+  transform: translateY(-3px);
+}
+
+.toggle__info {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: default;
+}
+
+.toggle__info span {
+  transform: translateY(-2px);
+  font-weight: bold;
+}
+
+.toggle__info:hover .toggle__info-hide {
+  opacity: 1;
+  transition: 0s 0.3s;
+}
+
+.toggle__info-hide {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: calc(100% + 26px);
+  right: -17px;
+  width: 290px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 25px 50px 25px 32px;
+  font-size: 16px;
+  color: rgba(46, 43, 43, 0.8);
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.1));
+}
+
+.toggle__info-hide::before {
+  content: "";
+  position: absolute;
+  bottom: 99%;
+  right: 21px;
+  height: 24px;
+  width: 24px;
+  border: 12px solid #fff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid transparent;
+}
+
 @media (max-width: 1199.98px) {
+  .toggle {
+    margin-top: 27px;
+  }
+
   .step-two .policy {
     width: 100%;
     margin-top: 30px;
@@ -671,6 +825,10 @@ textarea {
 }
 
 @media (max-width: 991.98px) {
+  .toggle__info:hover {
+    transition: 0s 0s;
+  }
+
   .step-one .bg {
     right: -70px;
   }
@@ -777,6 +935,14 @@ textarea {
 }
 
 @media (max-width: 575.98px) {
+  .step-three {
+    padding-top: 60px;
+  }
+
+  .step-three .text-block {
+    margin-bottom: 25px;
+  }
+
   .step-two {
     padding-top: 60px;
   }
@@ -853,6 +1019,7 @@ textarea {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: bold;
+    width: 100%;
   }
 
   .subtitle {

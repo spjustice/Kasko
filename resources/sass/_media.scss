@@ -8,6 +8,20 @@
 }
 // MAX-WIDTH 1399.98PX breakpoints END
 
+@media (max-width: 1299.98px) {
+   .results {
+      &__column-name {
+         &_company {
+            width: 40%;
+         }
+
+         &_price {
+            width: 60%;
+         }
+      }
+   }
+}
+
 // MAX-WIDTH 1199.98PX breakpoints START
 @media (max-width: 1199.98px) {
    .toggle {
@@ -33,6 +47,11 @@
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+   .results {
+      &__top-line {
+         display: none;
+      }
+   }
    .toggle__info:hover {
       transition: 0s 0s;
    }
@@ -121,6 +140,29 @@
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
+   .results {
+      &__header {
+         flex-direction: column;
+         align-items: start;
+         margin-right: 15px;
+         margin-bottom: 15px;
+      }
+      &__title {
+         font-size: 30px;
+         text-transform: uppercase;
+      }
+   }
+   .sorting {
+      &__block {
+         flex-wrap: wrap;
+      }
+
+      &__title {
+         width: 100%;
+         margin-right: unset;
+         margin-bottom: 12px;
+      }
+   }
    .banner {
       min-height: 500px;
    }
@@ -142,11 +184,55 @@
       margin-bottom: 30px;
       width: 100%;
    }
+   .check-item:not(:last-child) {
+      margin-right: 30px;
+   }
+   .check-block {
+      flex-wrap: wrap;
+   }
+   .check-item {
+      margin-bottom: 12px;
+   }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .results {
+      padding: 35px 0 15px;
+      &__header {
+         margin-bottom: 30px;
+      }
+   }
+   .final-data {
+      .text-block {
+         margin-top: unset;
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 30px;
+      }
+      .title {
+         align-self: center;
+         text-align: center;
+         margin-bottom: 10px;
+      }
+      .btn-secondary {
+         align-self: center;
+      }
+      .btn-back {
+         margin-bottom: 20px;
+         align-self: start;
+      }
+      .form-block {
+         margin-bottom: 17px;
+      }
+   }
+   .check-block {
+      padding-bottom: 32px;
+   }
+   .btn-back__text {
+      transform: translateY(-3px);
+   }
    .step-four {
       padding-top: 60px;
       .title {

@@ -29,8 +29,10 @@ Vue.component('app', require('./App.vue').default);
 
 
 import router from './router';
+import store from './store.js'
 
 const app = new Vue({
     el: '#app',
+    store,
     router
 });

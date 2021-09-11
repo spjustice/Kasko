@@ -1,7 +1,14 @@
 <template>
   <div id="app">
     <Header />
-    <router-view></router-view>
+    <main class="main">
+      <div class="container">
+        <div class="content">
+          <router-view></router-view>
+          <!--  <LoadingResults /> -->
+        </div>
+      </div>
+    </main>
     <Footer />
   </div>
 </template>
@@ -12,6 +19,8 @@ import StepOne from "./pages/StepOne";
 import StepTwo from "./pages/StepTwo";
 import StepThree from "./pages/StepThree";
 import StepFour from "./pages/StepFour";
+import FinalData from "./pages/FinalData";
+import LoadingResults from "./components/LoadingResults";
 import Footer from "./components/Footer";
 export default {
   name: "app",
@@ -21,6 +30,8 @@ export default {
     StepTwo,
     StepThree,
     StepFour,
+    FinalData,
+    LoadingResults,
     Footer,
   },
 };

@@ -20,7 +20,7 @@ import StepTwo from "./pages/StepTwo";
 import StepThree from "./pages/StepThree";
 import StepFour from "./pages/StepFour";
 import FinalData from "./pages/FinalData";
-import LoadingResults from "./components/LoadingResults";
+import Complete from "./pages/Complete";
 import Footer from "./components/Footer";
 export default {
   name: "app",
@@ -31,7 +31,7 @@ export default {
     StepThree,
     StepFour,
     FinalData,
-    LoadingResults,
+    Complete,
     Footer,
   },
 };

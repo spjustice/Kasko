@@ -733,6 +733,8 @@ textarea {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .btn-secondary .icon-arrow {
@@ -1051,6 +1053,44 @@ textarea {
   margin-right: 31px;
 }
 
+.complete {
+  padding-bottom: 50px;
+}
+
+.complete .text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.complete .btn-secondary {
+  align-self: start;
+  margin-bottom: 35px;
+}
+
+.complete .check-circle {
+  margin-bottom: 30px;
+}
+
+.complete .title {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.complete .paragraph {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.complete .btn {
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 197px;
+}
+
 @media (max-width: 1299.98px) {
   .results__column-name_company {
     width: 40%;
@@ -1241,6 +1281,32 @@ textarea {
 }
 
 @media (max-width: 575.98px) {
+  .complete {
+    min-height: 470px;
+  }
+
+  .complete .btn-secondary {
+    margin-bottom: 20px;
+  }
+
+  .complete .check-circle {
+    display: none;
+  }
+
+  .complete .title {
+    margin-bottom: 9px;
+  }
+
+  .complete .paragraph {
+    margin: 0 0 25px 0;
+    max-width: 202px;
+  }
+
+  .complete .btn {
+    width: 201px;
+    height: 55px;
+  }
+
   .results {
     padding: 35px 0 15px;
   }

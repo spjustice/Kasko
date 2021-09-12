@@ -8,6 +8,7 @@ import StepTwo from './pages/StepTwo'
 import StepThree from './pages/StepThree'
 import StepFour from './pages/StepFour'
 import FinalData from './pages/FinalData'
+import Complete from './pages/Complete'
 
 const routes = [
    {
@@ -29,6 +30,10 @@ const routes = [
    {
       path: '/FinalData',
       component: FinalData
+   },
+   {
+      path: '/Complete',
+      component: Complete
    }
 ];
 

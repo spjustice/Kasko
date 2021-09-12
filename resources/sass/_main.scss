@@ -692,6 +692,8 @@ textarea {
    font-size: 16px;
    font-weight: bold;
    cursor: pointer;
+   display: flex;
+   align-items: center;
    .icon-arrow {
       display: flex;
       align-items: center;
@@ -968,4 +970,35 @@ textarea {
    }
 }
 
+.complete {
+   padding-bottom: 50px;
+   .text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .btn-secondary {
+      align-self: start;
+      margin-bottom: 35px;
+   }
+   .check-circle {
+      margin-bottom: 30px;
+   }
+   .title {
+      text-align: center;
+      margin-bottom: 6px;
+   }
+   .paragraph {
+      text-align: center;
+      margin-bottom: 25px;
+   }
+   .btn {
+      font-size: 16px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 197px;
+   }
+}
 // banner end

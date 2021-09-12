@@ -198,6 +198,26 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .complete {
+      min-height: 470px;
+      .btn-secondary {
+         margin-bottom: 20px;
+      }
+      .check-circle {
+         display: none;
+      }
+      .title {
+         margin-bottom: 9px;
+      }
+      .paragraph {
+         margin: 0 0 25px 0;
+         max-width: 202px;
+      }
+      .btn {
+         width: 201px;
+         height: 55px;
+      }
+   }
    .results {
       padding: 35px 0 15px;
       &__header {
